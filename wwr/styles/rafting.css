@@ -1,11 +1,10 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ROOT VARIABLES (CONSISTENT COLORS ONLY) */
+/* ROOT VARIABLES */
 :root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
@@ -62,7 +61,7 @@ nav a:hover {
     color: var(--text-dark);
 }
 
-/* HEADER GRID */
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -85,7 +84,6 @@ header img {
     display: block;
 }
 
-/* HERO TITLE */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -96,7 +94,6 @@ header img {
     padding: 10px;
 }
 
-/* HERO ARTICLE */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -134,7 +131,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
 .socialmedia {
@@ -146,55 +142,16 @@ footer {
     text-decoration: none;
 }
 
-/* =========================
-   ✔ REQUIRED RUBRIC FIXES
-   ========================= */
-
-/* MAIN IMAGE STYLING (REQUIRED BY RUBRIC) */
-main img {
-    border: 2px solid var(--accent1-color);
-    padding: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+/* 🟢 FIX FOR GOOGLE MAP (IMPORTANT FOR W3C) */
+.contact-info iframe {
+    width: 100%;
+    border: 0;
 }
 
-/* EMPLOYEES SECTION */
+/* EMPLOYEES (optional layout improvement) */
 .employees {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 15px;
-}
-
-.employees figure {
-    width: 200px;
-}
-
-.employees img {
-    width: 100%;
-    height: auto;
-}
-
-/* CONTACT FORM */
-.contact-form {
-    margin: 20px;
-    padding: 10px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-}
-
-/* GOOGLE MAP */
-iframe {
-    border: 0;
-    width: 100%;
+    flex-wrap: wrap;
 }
