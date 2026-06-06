@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -143,4 +144,57 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+/* =========================
+   ✔ REQUIRED RUBRIC FIXES
+   ========================= */
+
+/* MAIN IMAGE STYLING (REQUIRED BY RUBRIC) */
+main img {
+    border: 2px solid var(--accent1-color);
+    padding: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* EMPLOYEES SECTION */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 15px;
+}
+
+.employees figure {
+    width: 200px;
+}
+
+.employees img {
+    width: 100%;
+    height: auto;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    margin: 20px;
+    padding: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+/* GOOGLE MAP */
+iframe {
+    border: 0;
+    width: 100%;
 }
